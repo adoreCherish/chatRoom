@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+{% block title %}My Page{% endblock %}
+{% block head %}
+{% parent %}
+    <!-- <link rel="stylesheet" href="custom.css"> -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/2.0.0/socket.io.js"></script>
+    <script src="../scripts/index.js"></script>
+    <link rel="stylesheet" href="../css/style.css"/>
+
+
+{% endblock %}
+{% block content %}
+    <h2 style="text-align: center">欢迎来到adore的聊天室</h2>
+    <!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel">hi,欢迎来到聊天室,请填写您喜欢的昵称,开始聊天吧</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<input id='yourName' type="text" value="" placeholder="请填写您喜欢的昵称" />
+	            </div>
+	            <div class="modal-footer">
+	                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> -->
+	                <button type="button" class="btn btn-primary" id="clickSure">确定</button>
+	            </div>
+	        </div><!-- /.modal-content -->
+	    </div><!-- /.modal -->
+	</div>
+
+	<!-- 聊天框 -->
+	<div id="connectContainer">
+		
+	</div>
+	<!-- 聊天内容输入框 -->
+	<div id="connectContent">
+		<input type="text" id="contentChart" value="" placeholder="请输入您要说的话" />
+		<button type="button" class="btn btn-primary" id="logOut">离开</button>
+		<button id="submitContent" class="btn btn-success">发送</button>
+	</div>
+{% endblock %}

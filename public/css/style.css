@@ -1,0 +1,62 @@
+body{
+	background:pink;
+}
+#connectContainer{
+	border: 1px solid #ccc;
+	background:white;
+	border-radius: 10px;
+	width:800px;
+	height:500px;
+	margin: 0 auto;
+	border-bottom:0;
+	position: relative;
+}
+#connectContent{
+	margin: 0 auto;
+	width:800px;
+}
+#contentChart{
+	width:650px;
+	border-radius: 10px;
+	line-height: 28px;
+	float:left;
+	margin-top: 10px;
+	border: 0;
+}
+.welcomeContent{
+	text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+#submitContent{
+	margin-top: 10px;
+	float: right;
+	margin-right: 10px;
+}
+#logOut{
+	float: right;
+	margin-top:10px;
+}
+.mainLeft{
+	float: left;
+    /* display: block; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    background: #ccc;
+    margin-left:20px;
+    padding-left: 10px;
+    
+}
+.mainRight{
+	float: right;
+    /* display: block; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    background: #cdf;
+    margin-top:20px;
+    margin-right: 20px;
+    padding-left:10px;
+   
+}
